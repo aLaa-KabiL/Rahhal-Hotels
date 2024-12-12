@@ -1,0 +1,258 @@
+/* General Styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 10px;
+  color: white;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.5);
+  transition: top 0.3s, background 0.3s;
+  font-weight: bold;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  flex: 0.67; /* To center the logo */
+  font-family: "Playwrite HR Lijeva", cursive;
+  font-optical-sizing: auto;
+  color: darkgoldenrod;
+  text-shadow: 
+    1px 1px 0 black,
+    -1px 1px 0 black,
+    1px -1px 0 black, 
+    -1px -1px 0 black;
+}
+
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  color: aqua;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('p 2 backg.jpg') center/cover no-repeat fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+  transition: transform 0.2s ease-out;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+  font-size: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+/* Hotels Section */
+.hotels-section {
+  background: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+.hotels-section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.hotel-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.hotel-card {
+  background: #fff;
+  margin: 10px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 390px;
+  width: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  border-radius: 15px;
+}
+
+.hotel-card img {
+  width: 100%;
+  height: 255px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.hotel-card h3 {
+  margin: 10px 0;
+  font-size: 22px;
+}
+
+.hotel-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.hotel-card button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.hotel-card button:hover {
+  background: #555;
+  transform: scale(1.1);
+}
+
+.hotel-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: left;
+  background: #333;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar a {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px; 
+  }
+
+  .hero-content p {
+    font-size: 14px; 
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+
+  .hotel-list {
+    flex-direction: column;
+    gap: 10px; /* تقليل الفجوة بين العناصر */
+  }
+
+  .hotel-card {
+    max-width: 100%;
+    padding: 10px; 
+    box-shadow: none;
+  }
+
+  .hotel-card img {
+    height: auto;
+  }
+
+  .footer {
+    text-align: center;
+  }
+}
+
+
+/* normal mode */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s;
+}
+
+/* Night mode */
+body.dark-theme {
+  background-color: #121212;
+  /* No change in text color */
+}
+
+/* Button design */
+.theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+body.dark-theme .theme-toggle {
+  color: #fff; /* Toggle button changes color in night mode */
+}
