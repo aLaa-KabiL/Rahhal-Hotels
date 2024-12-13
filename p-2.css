@@ -208,7 +208,7 @@ body, html {
 
   .hotel-list {
     flex-direction: column;
-    gap: 10px; /* تقليل الفجوة بين العناصر */
+    gap: 10px; /* Reduce the gap between elements */
   }
 
   .hotel-card {
