@@ -18,6 +18,11 @@ themeToggle.addEventListener('click', () => {
   if (body.classList.contains('dark-theme')) {
     themeToggle.textContent = '🌙';
   } else {
-    themeToggle.textContent = '🌞';
+    themeToggle.textContent = '☀️';
   }
 });
+
+const yearElement = document.getElementById('year');
+if (yearElement) {
+  yearElement.textContent = new Date().getFullYear();
+}

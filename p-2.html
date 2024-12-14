@@ -5,18 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DevLeg Hotels</title>
   <link rel="stylesheet" href="p-2.css">
-  <link rel="icon" type="image/x-icon" href="Logo.jpg">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="hero-section">
     <div id="navbar" class="navbar">
-      <a href="#hotels">Our Hotels</a>
-      <a href="#contact">Contact</a>
-      <a href="#stories">Stories</a>
+      <a href="#our-hotels" class="custom-button">Our Hotels</a>
+      <a href="#contact" class="custom-button">Contact</a>
+      <a href="#services" class="custom-button">Services</a>
       <div class="logo">DevLeg</div>
-      <button class="theme-toggle">🌞</button>
+      <button class="theme-toggle">🌙</button>
     </div>
 
     <div class="hero-content">
@@ -33,7 +32,7 @@
         <img src="H-1.jpg" alt="Hotel 1">
         <h3>KEMPINSKI</h3>
         <p>Experience ultimate luxury in the heart of the city.</p>
-        <button>View Details</button>
+        <a href="details.html" class="btn">View Details</a>
       </div>
       <div class="hotel-card">
         <img src="H-2.jpg" alt="Hotel 2">
@@ -52,7 +51,14 @@
   </section>
 
   <footer class="footer">
-    <p>&copy; 2024 DevLeg Hotels. All rights reserved.</p>
+    <div>
+      <p>&copy; <span id="year"></span> 2024 DevLeg Hotels. All Rights Reserved.</p>
+      <p>Follow us on : 
+        <a href="https://facebook.com" style="color: #007BFF;">Facebook</a> | 
+        <a href="https://twitter.com" style="color: #007BFF;">Twitter</a> |
+        <a href="https://Github.com" style="color: #007BFF;">Github</a>
+      </p>
+    </div>
   </footer>
 
   <script src="p-2.js"></script>
