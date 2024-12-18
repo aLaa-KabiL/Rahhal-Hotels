@@ -8,20 +8,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const themeToggle = document.querySelector('.theme-toggle');
-const body = document.body;
-
-themeToggle.addEventListener('click', () => {
-  body.classList.toggle('dark-theme');
-
-  // Change the button icon based on the current state
-  if (body.classList.contains('dark-theme')) {
-    themeToggle.textContent = '🌙';
-  } else {
-    themeToggle.textContent = '☀️';
-  }
-});
-
 const yearElement = document.getElementById('year');
 if (yearElement) {
   yearElement.textContent = new Date().getFullYear();

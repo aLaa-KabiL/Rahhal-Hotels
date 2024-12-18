@@ -38,17 +38,11 @@ body, html {
   color: darkgoldenrod;
 }
 
-.theme-toggle {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
-}
+/*____________________________________________________________________*/
 
 /* Hero Section */
 .hero-section {
-  background: url('p 2 backg.jpg') center/cover no-repeat fixed;
+  background: url('1.jpg') center/cover no-repeat fixed;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -78,9 +72,13 @@ body, html {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
+
+/*____________________________________________________________________*/
+
+
 .btn {
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #102039;
   color: white;
   text-decoration: none;
   border-radius: 25px;
@@ -90,9 +88,13 @@ body, html {
 }
 
 .btn:hover {
-  background-color: #555;
+  background-color: #3fd0d4;
   transform: scale(1.05);
 }
+
+
+/*____________________________________________________________________*/
+
 
 /* Hotels Section */
 .hotels-section {
@@ -181,6 +183,73 @@ body, html {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
 }
 
+/*_____________________________________________________________________*/
+
+/* Reset أساسي لتجنب أي تأثير خارجي */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* تصميم الفورم */
+.form-section {
+  width: 100%;
+  max-width: 400px; /* عرض ثابت للفورم */
+  margin: 50px auto; /* توسيط الفورم */
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input, textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #42cbd5;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #36a9b8;
+}
+
+
+/*______________________________________________________________________*/
 
 /* Footer */
 .footer {
@@ -227,35 +296,4 @@ body, html {
   .footer {
     text-align: center;
   }
-}
-
-
-/* normal mode */
-body {
-  background-color: #ffffff;
-  color: #000000;
-  transition: background-color 0.3s;
-}
-
-/* Night mode */
-body.dark-theme {
-  background-color: #121212;
-  /* No change in text color */
-}
-
-/* Button design */
-.theme-toggle {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  color: #000;
-  font-size: 24px;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-body.dark-theme .theme-toggle {
-  color: #fff; /* Toggle button changes color in night mode */
 }
