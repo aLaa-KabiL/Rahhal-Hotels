@@ -1,4 +1,4 @@
-/* General Styling */
+/*
 body, html {
   margin: 0;
   padding: 0;
@@ -6,7 +6,6 @@ body, html {
   font-family: Arial, sans-serif;
 }
 
-/* Navigation Bar */
 .navbar {
   position: fixed;
   top: 0;
@@ -40,7 +39,7 @@ body, html {
 
 /*____________________________________________________________________*/
 
-/* Hero Section */
+/*
 .hero-section {
   background: url('1.jpg') center/cover no-repeat fixed;
   height: 100vh;
@@ -62,19 +61,148 @@ body, html {
   transition: transform 0.2s ease-out;
 }
 
-.hero-content h1 {
-  font-size: 50px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-.hero-content p {
-  font-size: 20px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-
 /*____________________________________________________________________*/
 
+* {
+  margin: 0%;
+}
+
+.body {
+  background-color:rgb(246, 245, 245);
+  margin: 0 ;
+  font-family: "Cabin",sans-serif;
+}
+
+/* header */
+
+.logo {
+  width: 200px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 140%;
+}
+
+header {
+  position: absolute;
+  width: 95%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+header ul li {
+  margin-right: 30px;
+  transform: translateX(-10px);
+}
+
+header ul li a {
+  padding: 6px 15px;
+  border-radius: 20px;
+}
+
+header ul li a:hover {
+  background-color: #102039;
+  color: #fff;;
+}
+
+.search input {
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  height: 30px;
+  padding: 0 10px;
+  box-shadow: 20px 8px 20px rgba(24, 42, 97, 0.75) ;
+}
+
+.search button {
+  position: absolute;
+  left: 280px;
+  height: 30px;
+  width: 60px;
+  border-radius:50px ;
+  background-color: #102039;
+  color: #fcfcfc;
+  border: none;
+}
+
+.search button:hover {
+  background-color:#3fd0d4;
+  background-image: url("magnifying-black.png") ;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  
+}
+
+.button {
+  transform: translateX(1128px);
+}
+
+/* landing page */
+
+.landing-page{
+  /*background-image: url("18.jpg");*/
+  background: url('1.jpg') center/cover no-repeat fixed;
+  background-size:1920px 1080px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.btn-DH {
+  padding: 10px 20px;
+  background-color: #102039;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.btn-DH:hover {
+  background-color: #3fd0d4;
+  transform: scale(1.05);
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size:1920px 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.hotel-details {
+  color: white;
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 10px 0;
+}
+
+.hotel-details2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+/*____________________________*/
 
 .btn {
   padding: 10px 20px;
