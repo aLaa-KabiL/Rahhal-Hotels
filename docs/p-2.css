@@ -1,68 +1,3 @@
-/*
-body, html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 20px 10px;
-  color: white;
-  z-index: 1000;
-  background: rgba(0, 0, 0, 0.5);
-  transition: top 0.3s, background 0.3s;
-  font-weight: bold;
-}
-
-.navbar.scrolled {
-  background: rgba(0, 0, 0, 0.8);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.navbar a {
-  margin: 0 20px;
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-}
-
-.navbar a:hover {
-  color: darkgoldenrod;
-}
-
-/*____________________________________________________________________*/
-
-/*
-.hero-section {
-  background: url('1.jpg') center/cover no-repeat fixed;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-} 
-
-.hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  z-index: 1;
-  transition: transform 0.2s ease-out;
-}
-
-/*____________________________________________________________________*/
-
 * {
   margin: 0%;
 }
@@ -253,7 +188,6 @@ header ul li a:hover {
   max-width: 390px;
   width: 100%;
   transition: transform 0.3s, box-shadow 0.3s;
-
   border-radius: 15px;
 }
 
@@ -313,12 +247,82 @@ header ul li a:hover {
 
 /*______________________________________________________________________*/
 
-/* Footer */
+/* footer */
+
+.tiktok {
+  width:1.7%;
+  margin: 2px;    
+}
+
+.twitter {
+  width:1.7%;
+  margin: 2px;
+}
+
+.instagram {
+  width:1.7%;
+  margin: 2px;
+}
+
+.facebook {
+  width:1.7%;
+  margin: 2px;
+}
+
 .footer {
-  padding: 120px;
-  text-align: center;
-  background: #102039;
-  color: white;
+  margin: 0%;
+  padding: 0;
+  background: url('1.jpg') center/cover no-repeat fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size:1920px 1080px;
+  background-position: center;
+  width: 100%;
+  clip-path: inset(20% 0 0 0); /* Shrink 20% from top and bottom*/
+  display: block;
+  overflow: hidden;
+  margin-top: auto;
+  flex: 1; 
+}
+
+.logo2 {
+  transform: translateX(500px);
+  margin-bottom: 8%;
+  margin-top: 5%;
+  width: 35%;    
+}
+
+.content2 {
+  background-color: rgba(0, 0, 0, 0.372);
+  background-size:1920px 1080px;
+}
+
+.part1 {
+  position: absolute;
+ margin-left: 6%;
+ list-style: none;
+ color: #fff;
+ transform: translateY(-300px);
+ font-family:sans-serif;
+ font-size: 130%;
+}
+
+.links1 {
+  position: absolute;
+  transform: translateY(-300px);
+  margin-left: 77%;
+  color: #fff;
+  font-family:sans-serif;
+  font-size: 130%;
+}
+
+.links2 {
+  position: absolute;
+  transform: translateY(-241px);
+  margin-left: 90%;
+  color: #fff;
+  font-family:sans-serif; 
+  font-size: 130%; 
 }
 
 /* Responsive Design */

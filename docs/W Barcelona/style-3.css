@@ -88,8 +88,8 @@ header ul li a:hover {
 /* landing page */
 
 .landing-page{
-    background: url('18.jpg') center/cover no-repeat fixed;
-    background-size:1920px 1080px;
+    background: url('h-1.jpg') center/cover no-repeat fixed;
+    background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -387,7 +387,7 @@ hr {
 .footer {
     margin: 0%;
     padding: 0;
-    background: url('18.jpg') center/cover no-repeat fixed;
+    background: url('h-1.jpg') center/cover no-repeat fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-size:1920px 1080px;
