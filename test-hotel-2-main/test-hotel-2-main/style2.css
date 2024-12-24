@@ -11,7 +11,9 @@
 /* header */
 
 .logo {
-    width: 200px;
+    width: 15%;
+    height: 15%;
+    margin-bottom: 10px;
 }
 
 a {
@@ -60,7 +62,10 @@ header ul li a:hover {
     padding: 0 10px;
     box-shadow: 20px 8px 20px rgba(24, 42, 97, 0.75) ;
 }
-
+.font{
+    white-space: nowrap;
+    font-family: "Caveat", cursive;
+}
 .search button {
     position: absolute;
     left: 280px;
@@ -74,7 +79,7 @@ header ul li a:hover {
 
 .search button:hover {
     background-color:#3fd0d4;
-    background-image: url("magnifying-black.png") ;
+    background-image: url("images/magnifying-black.png") ;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -88,7 +93,7 @@ header ul li a:hover {
 /* landing page */
 
 .landing-page{
-    background: url('18.jpg') center/cover no-repeat fixed;
+    background: url("images/2020-03-15.jpg") center/cover no-repeat fixed;
     background-size:1920px 1080px;
     background-position: center;
     background-repeat: no-repeat;
@@ -112,13 +117,6 @@ header ul li a:hover {
     margin: 0 0 10px 0;
 }
 
-.hotel-details2 {
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-}
-
 /* content page */
 
 .content-page {
@@ -138,7 +136,16 @@ header ul li a:hover {
     color: #102039;
     padding: 20px 0;
 }
+.artical {
+    color: #102039;
+    font-size: larger;
+    display: flex;
+    justify-content: left;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 15px;
 
+  }
 .p {
     padding-bottom: 40px;
 }
@@ -387,7 +394,7 @@ hr {
 .footer {
     margin: 0%;
     padding: 0;
-    background: url("footer.jpg") center/cover no-repeat fixed;
+    background: url("images/footer.jpg") center/cover no-repeat fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-size:1920px 1080px;

@@ -3,23 +3,23 @@
 }
 
 .body {
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
     background-color:rgb(246, 245, 245);
     margin: 0 ;
     font-family: "Cabin",sans-serif;
 }
-
 /* header */
-
 .logo {
-    width: 200px;
+    width: 10%;
+   height: 15%;
+   margin-bottom: 10px;
 }
-
 a {
-    text-decoration: none;
-    color: white;
-    font-size: 140%;
+   text-decoration: none;
+   color: white;
+   font-size: 140%;
 }
-
 header {
     position: absolute;
     width: 95%;
@@ -29,7 +29,9 @@ header {
     align-items: center;
     margin: 5px;
 }
-
+.font{
+    font-family: "Caveat", cursive;
+}
 header ul {
     display: flex;
     justify-content: center;
@@ -41,7 +43,6 @@ header ul li {
     margin-right: 30px;
     transform: translateX(-10px);
 }
-
 header ul li a {
     padding: 6px 15px;
     border-radius: 20px;
@@ -57,7 +58,7 @@ header ul li a:hover {
     border: none;
     outline: none;
     height: 30px;
-    padding: 0 10px;
+    padding: 0px 10px;
     box-shadow: 20px 8px 20px rgba(24, 42, 97, 0.75) ;
 }
 
@@ -66,7 +67,7 @@ header ul li a:hover {
     left: 280px;
     height: 30px;
     width: 60px;
-    border-radius:50px ;
+    border-radius:50px;
     background-color: #102039;
     color: #fcfcfc;
     border: none;
@@ -74,13 +75,15 @@ header ul li a:hover {
 
 .search button:hover {
     background-color:#3fd0d4;
-    background-image: url("magnifying-black.png") ;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
     
 }
-
+.font{
+    white-space: nowrap;
+    font-family: "Caveat", cursive;
+}
 .button {
     transform: translateX(1128px);
 }
@@ -88,7 +91,7 @@ header ul li a:hover {
 /* landing page */
 
 .landing-page{
-    background: url('18.jpg') center/cover no-repeat fixed;
+    background-image: url("image/paris-france161853.jpeg");
     background-size:1920px 1080px;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,7 +99,7 @@ header ul li a:hover {
 
 .content {
     background-color: rgba(0, 0, 0, 0.5);
-    background-size:1920px 1080px;
+    background-size:1820px 1050px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,13 +113,6 @@ header ul li a:hover {
     display: flex;
     justify-content: center;
     margin: 0 0 10px 0;
-}
-
-.hotel-details2 {
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin: 0;
 }
 
 /* content page */
@@ -138,7 +134,16 @@ header ul li a:hover {
     color: #102039;
     padding: 20px 0;
 }
+.artical {
+    color: #102039;
+    font-size: larger;
+    display: flex;
+    justify-content: left;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 15px;
 
+  }
 .p {
     padding-bottom: 40px;
 }
@@ -194,6 +199,7 @@ header ul li a:hover {
 }
 
 .paragraph {
+    font-family:sans-serif ;
     margin: 0%;
 }
 
@@ -244,17 +250,16 @@ header ul li a:hover {
 .review {
     width: 100px;
 }
-
 .btn-hd {
     background-color: #102039;
     color: rgb(231, 232, 238);
     border: none;
-    border-radius: 50px;
-    height: 68px;
-    width: 250px;
-    font-size: 28px;
+    border-radius: 30px;
+    height: 48px;
+    width: 150px;
+    font-size: 17px;
     cursor: pointer;
-    margin: 5px 0 10px 0;
+    margin: 10px 0 -100px 0;
     display:inline-block;
     box-sizing: border-box;
 }
@@ -264,6 +269,7 @@ header ul li a:hover {
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    
 }
 
 .btn-hd span:after {
@@ -294,13 +300,14 @@ header ul li a:hover {
     background-color: #102039;
     color: rgb(231, 232, 238);
     border: none;
-    border-radius: 25px;
+    border-radius: 35px;
     height: 50px;
     width: 130px;
     font-size: 19px;
     cursor: pointer;
     margin: 20px auto;
     display: block;
+    margin-top: -1px;
 }
 
 .btn span {
@@ -355,7 +362,6 @@ header ul li a:hover {
     object-fit: cover;
 }
 
-
 hr {
     width: 100%;
     border: 1px medium ;
@@ -387,7 +393,7 @@ hr {
 .footer {
     margin: 0%;
     padding: 0;
-    background: url("footer.jpg") center/cover no-repeat fixed;
+    background-image: url("image/footer.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-size:1920px 1080px;
@@ -418,7 +424,7 @@ hr {
    list-style: none;
    color: #fff;
    transform: translateY(-300px);
-   font-family:sans-serif;
+   font-family: sans-serif;
    font-size: 130%;
 }
 
