@@ -299,12 +299,12 @@ header ul li a:hover {
 
 .part1 {
   position: absolute;
- margin-left: 6%;
- list-style: none;
- color: #fff;
- transform: translateY(-300px);
- font-family:sans-serif;
- font-size: 130%;
+  margin-left: 6%;
+  list-style: none;
+  color: #fff;
+  transform: translateY(-300px);
+  font-family:sans-serif;
+  font-size: 130%;
 }
 
 .links1 {
